@@ -23,7 +23,7 @@ html_tr, html_te, categories_tr, categories_te = train_test_split(clean_html,
                                                                   stratify=labels)
 
 #Review the head of each
-head(html_tr)
-head(html_te)
-head(categories_tr)
-head(categories_te)
+html_tr[0:5]
+categories_tr[0:5]
+html_te[0:5]
+categories_te[0:5]
