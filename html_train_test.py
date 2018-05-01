@@ -18,7 +18,7 @@ labels = courses + departments + faculty + others + projects + staff + students
 #Generate the random training and testing sets
 html_tr, html_te, categories_tr, categories_te = train_test_split(clean_html,
                                                                   labels,
-                                                                  test_size=0.25,
+                                                                  test_size=0.30,
                                                                   random_state=42,
                                                                   stratify=labels)
 
