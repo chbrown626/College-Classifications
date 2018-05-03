@@ -1,1 +1,1 @@
-# College-Classifications
+# Classifying Colleges Creatively
