@@ -15,6 +15,14 @@ students = ['student'] * 1641
 #Combine into one large group the same size as the clean_html data
 labels = courses + departments + faculty + others + projects + staff + students
 
+#Plots of the Testing Categories
+# data to plot
+label_df = pd.DataFrame(labels)
+
+label_df.columns = ['Category']
+
+label_df['Category'].value_counts().plot('bar')
+
 #Generate the random training and testing sets
 html_tr, html_te, categories_tr, categories_te = train_test_split(clean_html,
                                                                   labels,
