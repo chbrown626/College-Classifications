@@ -35,3 +35,19 @@ html_tr[0:5]
 categories_tr[0:5]
 html_te[0:5]
 categories_te[0:5]
+
+#Plots of the Training Categories
+# data to plot
+cat_tr_df = pd.DataFrame(categories_tr)
+
+cat_tr_df.columns = ['Category']
+
+cat_tr_df['Category'].value_counts().plot('bar')
+
+#Plots of the Testing Categories
+# data to plot
+cat_te_df = pd.DataFrame(categories_te)
+
+cat_te_df.columns = ['Category']
+
+cat_te_df['Category'].value_counts().plot('bar')
