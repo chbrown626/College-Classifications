@@ -18,6 +18,7 @@ models = [
 
 CV = 5
 cv_df = pd.DataFrame(index=range(CV * len(models)))
+entries = []
 
 for model in models:
   model_name = model.__class__.__name__
