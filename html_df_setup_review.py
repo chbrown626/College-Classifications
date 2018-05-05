@@ -36,6 +36,14 @@ html_df['Categories'].value_counts().plot('bar', color = 'purple')
 #Creating wordclouds of the data by category
 from wordcloud import WordCloud
 
+#Full dataset word cloud
+full_wc = WordCloud(max_font_size=75,
+                      max_words=500).generate_from_text(' '.join(html_df['HTML']))
+plt.figure()
+plt.imshow(full_wc, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+
 #Course word cloud
 course_wc = WordCloud(max_font_size=75,
                       max_words=500).generate_from_text(' '.join(html_df['HTML'][:929]))
