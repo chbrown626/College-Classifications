@@ -21,3 +21,6 @@ This project also presented me with the opportunity to utilize skills that I had
 ### Importing the Data
 
 The data used is readily available via the [4 Universities](http://www.cs.cmu.edu/afs/cs.cmu.edu/project/theo-20/www/data/) site. The file comes GNU tar'ed and gzip'ped; I chose to complete the extraction on my desktop, but this can also be accomplished using Python. Once all the files are extracted, the data can be imported using **os.walk()** and **BeautifulSoup**; **os.walk()** allows us to read all 8282 HTML files into Python quickly and **BeautifulSoup** parses the HTML files. 
+
+### Reviewing the Data
+
