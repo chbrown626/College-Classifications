@@ -39,6 +39,7 @@ y_pred_NB = NBModel.predict(X_test_tfidf)
 
 #NB Confusion Matrix
 from sklearn.metrics import confusion_matrix
+import seaborn as sns 
 
 conf_mat = confusion_matrix(y_test, y_pred_NB)
 fig, ax = plt.subplots(figsize = (10, 10))
